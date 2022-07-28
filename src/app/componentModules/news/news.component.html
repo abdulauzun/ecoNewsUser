@@ -4,20 +4,22 @@
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">First Name</th>
-        <th scope="col">Last Name</th>
-        <th scope="col">Gmail</th>
-        <th scope="col">Gender</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">BenefitFamilyId</th>
         <th scope="col">Details</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of news">
         <th scope="row">{{ item.id }}</th>
-        <td>{{ item.firstname }}</td>
-        <td>{{ item.lastname }}</td>
-        <td>{{ item.email }}</td>
-        <td>{{ item.gender }}</td>
+        <td>{{ item.StartDate }}</td>
+        <td>{{ item.EndDate }}</td>
+        <td>{{ item.Name }}</td>
+        <td>{{ item.Description }}</td>
+        <td>{{ item.BenefitFamilyId }}</td>
         <td>
           <i class="fa fa-forward fa-xs" aria-hidden="true"></i>
         </td>
