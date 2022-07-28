@@ -10,7 +10,7 @@ export class NewsService {
 
   constructor(private http:HttpClient) { }
   getAll(): Observable<News[]>{
-    let apiUrl = "https://my.api.mockaroo.com/mp.json?key=18d88290";
+    let apiUrl = "https://my.api.mockaroo.com/benefits.json?key=ff59ae80";
    return this.http.get<News[]>(apiUrl);
   }
   update(data:News){
