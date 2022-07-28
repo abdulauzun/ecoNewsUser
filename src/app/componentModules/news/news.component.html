@@ -1,0 +1,27 @@
+<!-- Creat Dable Show Data That Come From Database Of tsFile -->
+<div class="row d-flex justify-content-center m-5">
+  <table class="table text-center">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Gmail</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of news">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.firstname }}</td>
+        <td>{{ item.lastname }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.gender }}</td>
+        <td>
+          <i class="fa fa-forward fa-xs" aria-hidden="true"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
